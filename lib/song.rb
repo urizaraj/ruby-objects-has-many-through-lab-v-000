@@ -4,5 +4,6 @@ class Song
   def initialize(name, genre)
     self.name = name
     self.genre = genre
+    genre.add_song(self)
   end
 end
